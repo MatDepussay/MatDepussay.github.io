@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Image/ChatGPT Image Feb 6, 2026, 11_28_43 AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#PageCentrale {
+    background-color: transparent;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex: 1;
+}
+#PageCentrale h1 {
+    color: #333333;
+    text-align: center;
+}
+#APropos {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    text-align: left;
+}
+
+#APropos h1 {
+    text-align: left;
+}
+
+footer {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-top: auto;
+    
+}
+
+.footer-content {
+    text-align: center;
+    color: #333333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333333;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
