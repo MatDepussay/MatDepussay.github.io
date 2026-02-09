@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     color: #1b1b1b;
     position: relative;
+    font-family: "Segoe UI", "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
 }
 
 body::before {
@@ -23,14 +25,15 @@ body::before {
 
 #PageCentrale,
 footer,
-#Projets {
+#Projets,
+#Experience,
+#APropos {
     position: relative;
     z-index: 1;
 }
 #PageCentrale {
     background-color: transparent;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 24px 20px 10px;
     text-align: center;
     flex: 1;
 }
@@ -38,12 +41,19 @@ footer,
     color: #333333;
     text-align: center;
 }
+#Acceuil h1 {
+    margin: 24px 0 8px;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: #f8fafc;
+    text-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+}
 #APropos {
-    background-color: transparent;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: none;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 24px 26px;
+    margin: 18px auto 30px;
+    border-radius: 16px;
+    max-width: 900px;
+    box-shadow: 0 20px 45px rgba(10, 12, 18, 0.2);
     text-align: left;
 }
 
@@ -115,7 +125,8 @@ footer {
 
 .footer-content {
     text-align: center;
-    color: #333333;
+    color: #f8fafc;
+    text-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
 }
 
 .social-links {
@@ -132,15 +143,15 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #333333;
-    background-color: #f2f2f2;
+    color: #111827;
+    background-color: rgba(248, 250, 252, 0.95);
     text-decoration: none;
     transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 
 .social-link:hover {
     transform: translateY(-2px);
-    background-color: #333333;
+    background-color: #111827;
     color: #ffffff;
 }
 
@@ -153,12 +164,25 @@ footer {
     display: flex;
     justify-content: center;
     opacity: 0.8;
-    gap : 5px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 #Navigation a{
     shape-margin: 10px;
-    background-color: white;
-    color: grey;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #374151;
+    padding: 10px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.15);
+}
+
+#Navigation a:hover {
+    transform: translateY(-1px);
+    background-color: #111827;
+    color: #ffffff;
 }
 
 #Projets {
@@ -281,4 +305,21 @@ footer {
     transform: translateY(-1px);
     background: #1f2937;
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+}
+
+.partenariat-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.Partenariat {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: rgba(15, 23, 42, 0.08);
+    border-radius: 999px;
+    color: #334155;
+    text-decoration: none;
+    font-size: 0.85rem;
 }
