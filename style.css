@@ -323,3 +323,62 @@ footer {
     text-decoration: none;
     font-size: 0.85rem;
 }
+
+#Competences {
+    max-width: 1000px;
+    margin: 24px auto 40px;
+    padding: 28px 28px 34px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(10, 12, 18, 0.25);
+    backdrop-filter: blur(6px);
+}
+
+#Competences h1 {
+    margin: 0 0 8px;
+    color: #141822;
+    font-size: 2rem;
+}
+
+#Competences p {
+    margin: 0 0 22px;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.competence-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.competence-title {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+.package-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.package-list li {
+    padding: 6px 12px;
+    background: rgba(15, 23, 42, 0.08);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #1f2937;
+}
