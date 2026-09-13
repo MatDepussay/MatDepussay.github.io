@@ -57,6 +57,17 @@ export const projects = [
     featured: false,
   },
   {
+    id: "e-manuscrita-scraping",
+    title: "Web Scraping — e-manuscripta",
+    description:
+      "Scraping d'images du site e-manuscripta pour un projet de recherche, avec entraînement d'un modèle Hugging Face.",
+    visibility: "public",
+    context: "Académique",
+    repo: "https://github.com/MatDepussay/Web_Scrapping_e-manuscrita",
+    tech: ["Python", "Web Scraping", "Hugging Face"],
+    featured: false,
+  },
+  {
     id: "avc",
     title: "Machine Learning AVC",
     description: "Découverte du machine learning pour prédire les personnes à risque d'AVC.",

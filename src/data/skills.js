@@ -58,14 +58,13 @@ export const skills = [
     id: "sql",
     icon: "database",
     title: "SQL",
-    description: "Requêtage complexe, jointures et gestion de bases de données relationnelles.",
-    items: [],
+    items: ["Requêtage complexe", "Jointures", "T-SQL", "PostgreSQL", "Bases de données relationnelles"],
   },
   {
     id: "web",
     icon: "code",
-    title: "Développement Web",
-    items: ["HTML5", "CSS"],
+    title: "Développement Web & API",
+    items: ["TypeScript", "React", "HTML5", "CSS", "Conception d'API REST"],
   },
   {
     id: "bureautique",
