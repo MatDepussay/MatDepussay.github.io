@@ -2,8 +2,7 @@ export const projects = [
   {
     id: "powerbi-mcp",
     title: "Power BI MCP Server",
-    description:
-      "Serveur MCP (Model Context Protocol) permettant à des agents IA de construire de bout en bout des rapports Power BI et des modèles sémantiques complets.",
+    description: "Outil IA connecté à Power BI, développé pour un client ONEPOINT.",
     visibility: "private",
     context: "ONEPOINT",
     tech: ["Python", "MCP", "Power BI", "Claude"],
@@ -12,8 +11,7 @@ export const projects = [
   {
     id: "dataagent-eval",
     title: "DataAgent Evaluation Framework",
-    description:
-      "Système d'évaluation multi-critères des réponses d'un Data Agent Fabric, avec verdicts automatiques Accept / Review / Reject.",
+    description: "Outil d'évaluation qualité pour un Data Agent Microsoft Fabric.",
     visibility: "private",
     context: "ONEPOINT",
     tech: ["Python", "Microsoft Fabric", "IA Agentique"],
@@ -22,8 +20,7 @@ export const projects = [
   {
     id: "medallion-skills",
     title: "Medallion Automation Skills",
-    description:
-      "Skills Claude Code automatisant l'ingestion Bronze → Silver et la modélisation dimensionnelle de la couche Gold sur Microsoft Fabric.",
+    description: "Automatisation de pipelines de données sur Microsoft Fabric via Claude Code.",
     visibility: "private",
     context: "ONEPOINT",
     tech: ["Microsoft Fabric", "PySpark", "Claude Code"],
@@ -32,8 +29,7 @@ export const projects = [
   {
     id: "bike-app",
     title: "Fabric App (Bike_App)",
-    description:
-      "Application Fabric intégrée combinant des dashboards en DirectQuery, un chat avec un Data Agent et un explorateur de gouvernance des données.",
+    description: "Application interne combinant reporting et données Microsoft Fabric.",
     visibility: "private",
     context: "ONEPOINT",
     tech: ["Microsoft Fabric", "Power BI", "T-SQL"],
@@ -42,8 +38,7 @@ export const projects = [
   {
     id: "id-scan",
     title: "Analyse de documents",
-    description:
-      "Application fullstack en Python pour analyser des documents d'identité et remplir automatiquement des fichiers Excel.",
+    description: "Application Python d'analyse automatisée de documents d'identité.",
     visibility: "private",
     context: "Personnel",
     tech: ["Python", "Azure API"],

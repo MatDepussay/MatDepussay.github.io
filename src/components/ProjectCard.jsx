@@ -15,9 +15,6 @@ export default function ProjectCard({ project }) {
         )}
       </div>
       <p>{project.description}</p>
-      {isPrivate && (
-        <p className="projet-note">Code non public (confidentialité) — détails sur demande.</p>
-      )}
       <TagList items={project.tech} />
       {project.partners && (
         <ul className="partenariat-list">
@@ -30,11 +27,7 @@ export default function ProjectCard({ project }) {
           ))}
         </ul>
       )}
-      {isPrivate ? (
-        <a className="projet-link projet-link-outline" href="mailto:matdepussay@gmail.com">
-          Me contacter
-        </a>
-      ) : (
+      {!isPrivate && (
         <a className="projet-link" href={project.repo} target="_blank" rel="noopener noreferrer">
           Voir sur GitHub
         </a>

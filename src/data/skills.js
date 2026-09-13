@@ -10,6 +10,7 @@ export const skills = [
       "Data Agents",
       "Real-Time Intelligence (RTI)",
       "Automatisation de workspace",
+      "Azure REST API",
     ],
   },
   {
@@ -73,16 +74,10 @@ export const skills = [
     items: ["Microsoft Office Suite", "Excel avancé", "VBA", "Power BI"],
   },
   {
-    id: "redaction",
-    icon: "pen-nib",
-    title: "Rédaction",
-    items: ["LaTeX", "Markdown"],
-  },
-  {
     id: "tools",
     icon: "laptop-code",
     title: "Versioning & Tools",
-    items: ["Git", "GitHub", "VS Code", "DataCamp"],
+    items: ["Git", "GitHub", "VS Code", "Markdown", "DataCamp"],
   },
   {
     id: "hard-skills",

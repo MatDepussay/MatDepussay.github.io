@@ -1,23 +1,25 @@
-import useActiveSection from "../hooks/useActiveSection";
+import { NavLink } from "react-router-dom";
 
 const ITEMS = [
-  { id: "accueil", label: "Accueil" },
-  { id: "apropos", label: "À propos" },
-  { id: "experiences", label: "Expérience" },
-  { id: "competences", label: "Compétences" },
-  { id: "certifications", label: "Certifications" },
-  { id: "projets", label: "Projets" },
+  { to: "/", label: "Accueil", end: true },
+  { to: "/experiences", label: "Expérience" },
+  { to: "/competences", label: "Compétences" },
+  { to: "/certifications", label: "Certifications" },
+  { to: "/projets", label: "Projets" },
 ];
 
 export default function Nav() {
-  const activeId = useActiveSection(ITEMS.map((item) => item.id));
-
   return (
     <nav id="Navigation" className="site-nav">
       {ITEMS.map((item) => (
-        <a key={item.id} href={`#${item.id}`} className={activeId === item.id ? "active" : ""}>
+        <NavLink
+          key={item.to}
+          to={item.to}
+          end={item.end}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
           {item.label}
-        </a>
+        </NavLink>
       ))}
     </nav>
   );
